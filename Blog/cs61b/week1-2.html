@@ -55,6 +55,63 @@
       </tr>
       </table>
       </section>
+      <p>As we might have expected, the sum in binary is performed int he same way as in decimal, carrying numebrs to the left. There is also a situation that might happen, and that is, when the result of an operation, in this case a sum, is bigger that the range of the numbers in the input. An example, in decimal, is 5 + 8, which yields 13, bigger (with more positions), than both 5 and 8. In this case, we do what is called truncating:</p>
+
+      <!-- insert truncation image -->
+      <section id = "explainshot">
+        <table width=100% height=100%>
+      <tr>
+      <td style = "text-align: center; vertical align: middle;">
+          <img src="/Blog/cs61b/images/trucation.png"  height  = "260"  width = "350">
+      </td>
+      </tr>
+      </table>
+      </section>
+      
+      <p>We can truncate, which is pretty cool, but now we ask: how can we represent negative numbers? well, se the last part of the truncation image? The hint is: Given a number x, we define -x such that x + (-x) = 0. Have any idea of how can we do this?</p>
+      <p>Well, let's try t understand with an example: We have the number 0101 in binary. Now what should we add to it so the result yields all zeros? Well, let's, think of an easier one: what should we add to it so the result yields all ones?</p>
+
+      <p>
+          0101 <br>
+        + ???? <br> 
+        _______ <br>
+
+          1111 
+      </p>
+
+      <p> That is easy, it's just the opposite: 
+          0101 <br>
+        + 1010 <br> 
+        _______ <br>
+
+          1111
+      </p>
+      <p>Now note that, by trucantion, the concept we learned before, to turn 1111 to all zeros we just need to add one to it. Now we can answer the first question:
+          0101 <br>
+        + ???? <br> 
+        _______ <br>
+
+          0000  <br>
+
+      Well, in order to find ???? we just need to add one to 1010, which is 1011, an that is our (-x).    
+      </p>
+
+
+
+      <p>It turns out that computers represent negative numbers using two's complement, so operations might work like this:</p>
+
+      <section id = "explainshot">
+        <table width=100% height=100%>
+      <tr>
+      <td style = "text-align: center; vertical align: middle;">
+          <img src="/Blog/cs61b/images/agnostic.png"  height  = "260"  width = "350">
+      </td>
+      </tr>
+      </table>
+      </section>
+      <p>In the image above, the 1011 might mean 11 or -5.Now I have a question: How does the chip knows when we mean 11 or 5. I don't know right now, but I know that <em>there is no need to change the hardware, as we are working in binary, it will yield the same result. </em> </p>
+
+
 
     </section>
    
