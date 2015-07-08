@@ -62,7 +62,7 @@
         <table width=100% height=100%>
       <tr>
       <td style = "text-align: center; vertical align: middle;">
-          <img src="/Blog/cs61b/images/trucation.png"  height  = "260"  width = "350">
+          <img src="/Blog/cs61b/images/truncation.png"  height  = "260"  width = "350">
       </td>
       </tr>
       </table>
@@ -93,12 +93,13 @@
 
           0000  <br>
 
-      Well, in order to find ???? we just need to add one to 1010, which is 1011, an that is our (-x).    
+      Well, in order to find ???? we just need to add one to 1010, which is 1011, an that is our (-x). This process is called <strong>Twos compelement</strong>   , and it simply indicates that to negate a number, we: <br>
+      1. Flip the bits. <br>
+      2. Add one. <br>
+
       </p>
 
-
-
-      <p>It turns out that computers represent negative numbers using two's complement, so operations might work like this:</p>
+      <p>In the image bellow, the 1011 might mean 11 or -5.Now I have a question: How does the chip knows when we mean 11 or 5. I don't know right now, but I know that <em>there is no need to change the hardware, as we are working in binary, it will yield the same result. It would do both unsigned and signed arithmetic.</em> </p>
 
       <section id = "explainshot">
         <table width=100% height=100%>
@@ -109,7 +110,61 @@
       </tr>
       </table>
       </section>
-      <p>In the image above, the 1011 might mean 11 or -5.Now I have a question: How does the chip knows when we mean 11 or 5. I don't know right now, but I know that <em>there is no need to change the hardware, as we are working in binary, it will yield the same result. </em> </p>
+      <h2>Minimums and Maximums and it's relation to Java</h2>
+
+      <section id = "explainshot">
+        <table width=100% height=100%>
+      <tr>
+      <td style = "text-align: center; vertical align: middle;">
+          <img src="/Blog/cs61b/images/minmax.png"  height  = "260"  width = "350">
+      </td>
+      </tr>
+      </table>
+      </section>
+
+      <p>The image above shows the Minimums and maximums table for both US and S.</p>
+
+      <section id = "explainshot">
+        <table width=100% height=100%>
+      <tr>
+      <td style = "text-align: center; vertical align: middle;">
+          <img src="/Blog/cs61b/images/tableintjava.png"  height  = "260"  width = "350">
+      </td>
+      </tr>
+      </table>
+      </section>
+      <p>The key thing to take into account is that in both US and S arithmetic once you get to the biggest number, it returns to the somallest one by truncation and in the case of S, also by Twos complement. <strong>This is the reason for some of the weird things happening in Java with big numbers, in this case, integers</strong>
+      <br>
+      Oh, so you don't believe me, try this: <br>
+      System.out.println(2147483647); Result: 2147483647. <br>
+      System.out.println(2147483647 + 1); Result: - 2147483648. <br>
+
+      This works with bytes too! <br>
+      System.out.println( (byte)  (127) ); Result: 127. <br>
+      System.out.println((byte)  (127+ 1) ; Result: - 128. <br>
+      </p>
+      <p>Why are we taling all these things into consideration? Aren't these way too specfic, probably we'll never use it! Well, no! You need to be full stack, know when others don't. Why, because of <strong>bitwise operators!</strong> </p>
+
+      <section id = "explainshot">
+        <table width=100% height=100%>
+      <tr>
+      <td style = "text-align: center; vertical align: middle;">
+          <img src="/Blog/cs61b/images/bitoper.png"  height  = "260"  width = "350">
+      </td>
+      </tr>
+      </table>
+      </section>
+
+      <p>Finnaly, here are some other operations!</p>
+      <section id = "explainshot">
+        <table width=100% height=100%>
+      <tr>
+      <td style = "text-align: center; vertical align: middle;">
+          <img src="/Blog/cs61b/images/bitoper2.png"  height  = "260"  width = "350">
+      </td>
+      </tr>
+      </table>
+      </section>
 
 
 
