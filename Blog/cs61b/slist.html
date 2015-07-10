@@ -57,34 +57,59 @@
       </p>
 
       <p>    
-        Note that an SListNode is structually EXACTLY the same as an IntList. The only differences are the class name and the field name difference. However, we'll conceptualize how this class is used in a completely different way. <br>
-        II. Second, we'll create a separate List class, whose job is to maintain the head (first node) of the list.  We will put many of the methods that operate on lists in the SList class, rather than the SlistNode class. These methods are: insertFront() - insertBack() - size().
-        </p>
-        <p>
-        Now, if you look at the code, I have implemented insertBack and insertFront and they are pretty straight forward. Waht about size? If you try to implement this method, let's say, recursively, you will find yourself needing a helper method. I don't currently konw why do they use those, and the only anserr I might imagine is that they want the method size() to be as simple to use as possible, and having the other method allows them having ugly parameter calls, as the one necessary to get the size() function working. You can see the implementation of this helper method in my repo.
-        </p>
-        <p>
-        This implementation,  however, is problematic as our SList gets larger and larger. We are engineers, we don't want to pass thorugh the whole list just the get its size. What if we have a variable that stores the current size of the SList? Yeah! We could change it's value everytime we add or remove something from the list. In the repo you will find both implementations in the same class. I might create a tester class to show you the runtime with larger SLists.
-        </p>
-
-        <p>
-        Now, remember I told you it was impossible to have an empty list with the IntList implementation? Well, we can now. The only thing we need to do is add another constructor to the SList class that accepts no first node, and then set the front to null and its size to zero. Piece of cake! Wait, if I run the tests I get a null pinter exception. What happened? Wait! The insertBack() method gives us an special case when we have an empty list, as there is no p.next! Well, a conditional seems appropiate and it is. Nonvetheless, this solution is really ugly. 
-        </p>
-
-        <h2>IMPROVEMENTS</h2>
-
-        <section id = "explainshot">
-        <table width=100% height=100%>
-        <tr>
-        <td style = "text-align: center; vertical align: middle;">
-          <img src="/Blog/cs61b/images/improvesSList.png"  height  = "240"  width = "300">
-        </td>
-        </tr>
-        </table>
-        </section>
-
-
+      Note that an SListNode is structually EXACTLY the same as an IntList. The only differences are the class name and the field name difference. However, we'll conceptualize how this class is used in a completely different way. <br>
+      II. Second, we'll create a separate List class, whose job is to maintain the head (first node) of the list.  We will put many of the methods that operate on lists in the SList class, rather than the SlistNode class. These methods are: insertFront() - insertBack() - size().
       </p>
+
+      <h2>IMPROVEMENTS</h2>
+
+      <p>
+      Now, if you look at the code, I have implemented insertBack and insertFront and they are pretty straight forward. What about size? If you try to implement this method, let's say, recursively, you will find yourself needing a helper method. I don't currently konw why do they use those, and the only anserr I might imagine is that they want the method size() to be as simple to use as possible, and having the other method allows them having ugly parameter calls, as the one necessary to get the size() function working. You can see the implementation of this helper method in my repo.
+      </p>
+      <p>
+      This implementation,  however, is problematic as our SList gets larger and larger. We are engineers, we don't want to pass thorugh the whole list just the get its size. What if we have a variable that stores the current size of the SList? Yeah! We could change it's value everytime we add or remove something from the list. In the repo you will find both implementations in the same class. I might create a tester class to show you the runtime with larger SLists.
+      </p>
+
+      <p>
+      Now, remember I told you it was impossible to have an empty list with the IntList implementation? Well, we can now. The only thing we need to do is add another constructor to the SList class that accepts no first node, and then set the front to null and its size to zero. Piece of cake! Wait, if I run the tests I get a null pinter exception. What happened? Wait! The insertBack() method gives us an special case when we have an empty list, as there is no p.next! Well, a conditional seems appropiate and it is. Nonvetheless, this solution is really ugly. 
+      </p>
+
+       <section id = "explainshot">
+       <table width=100% height=100%>
+       <tr>
+       <td style = "text-align: center; vertical align: middle;">
+          <img src="/Blog/cs61b/images/improvesSList.png"  height  = "240"  width = "300">
+       </td>
+       </tr>
+      </table>
+      </section>
+
+      <p>How are we going to meake this better? Well, the answer is going to make us change a lot fo the code, so I have now created a new class and its correspondient tests and launcher in which our 'ugly' implementation is going to lay: SListNosentinel (does that give you any hints?) Let's leave SList and the rest for the on with the sentinel. SENTINEL!</p>
+
+      <p>A sentinel node is an IntNode which front is always pointing to. This allows us to avoid the "bad spot" which makes us consider a bunch of special cases. The onyl thing we have to consider is that we have to make smarter code, both when we are implementing the SList class and also when we are working on it with other classes.</p>
+
+       <section id = "explainshot">
+       <table width=100% height=100%>
+       <tr>
+       <td style = "text-align: center; vertical align: middle;">
+          <img src="/Blog/cs61b/images/sentinel.png"  height  = "240"  width = "300">
+       </td>
+       </tr>
+      </table>
+      </section> 
+
+      <p>A sentinel node is really good, elegant and eficient because it makes use of a concept call <strong>Invariant</strong> :</p>
+
+      <section id = "explainshot">
+       <table width=100% height=100%>
+       <tr>
+       <td style = "text-align: center; vertical align: middle;">
+          <img src="/Blog/cs61b/images/invariants.png"  height  = "240"  width = "300">
+       </td>
+       </tr>
+      </table>
+      </section> 
+
 
 
 
