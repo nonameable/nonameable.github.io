@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>The web site of nonameable</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <!--// apparently this is not a closing tag. -->
+  </head>
+  <body>
+  <header>
+    <h1 align="center" >Welcome to nonameable.github.io </h1>
+    <nav style = "text-align: center; vertical align: middle;"> <!-- I don't know if its good to give it style like this-->
+    
+    <a href="/index.html">Home</a> 
+    <a href="acomplishments.html">List</a> 
+    <a href="/schoolWork.html"> School Work</a> 
+    <a href="/math.html">Math</a>
+    <a href="/courses.html">Courses</a>
+  
+    </nav>
+
+  </header>
+    
+    
+    <section class="text">
+      <h1>Node list, sentinel list</h1>
+
+      <p>Node linked list are going to be an improvment from our schemelike linked list. This is because when we look at the implementation of IntList, sometimes is hard to follow all the references things, and also there is no way for us to represent an empty list, and this is pretty useful! (available in python or Matlab). What we're going to do is rebrand some things, even the name.</p>
+
+      <p>We are going to create two new classes: <strong>IntNode </strong> which is going to be the one representing the node and also<strong>SList</strong>, representing the controller of the whole list. You cna find my own version of Josh Hug implementation in my github repo here: <br>
+      <a href=""></a>
+
+      </p>
+
+      <section id = "explainshot">
+        <table width=100% height=100%>
+      <tr>
+      <td style = "text-align: center; vertical align: middle;">
+          <img src="/Blog/cs61b/images/intlistvsslist.png"  height  = "240"  width = "300">
+      </td>
+      </tr>
+      </table>
+      </section>
+
+      <h2>LINKED LISTS (a recursive data type) </h2>
+      <p>
+      We discussed the idea of a Scheme-like list in Java which we called a linked list. A linked list is made up of nodes.  Each node has two components:  an value, and a reference to the tail node in the list.  These components are analogous to "car" and "cdr" in Scheme.  However, our node is an explicitly defined object. <br>
+
+        public class IntList {          // IntList is a recursive type <br>
+          public int value; <br>
+          public IntList tail;          // Here we're using IntList before <br>
+        }                                //   we've finished declaring it.
+
+
+        </p>
+
+    </section>
+   
+
+    <footer>
+    <nav style = "text-align: center; vertical align: middle;">
+    
+    <a href="/index.html">Home</a> 
+    <a href="acomplishments.html">List</a> 
+    <a href="/schoolWork.html"> School Work</a> 
+    <a href="/math.html">Math</a>
+    <a href="/courses.html">Courses</a>
+    </nav>
+      <p align="center" > Made by <b>nonameable</b> </p>
+    </footer>
+
+  </body>
+</html>
