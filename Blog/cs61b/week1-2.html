@@ -46,7 +46,7 @@
       <p>He explains binary, and its operations. This in order to explain machine structures. Computers have chips with wires, which are determined by the capacity of the computer (8-bit, 32-bit , 64-bit). The example in the image melow is a chip that adds numbers, of course, in binary. The wires at the top and the bottom are input and the ones to the right are output. There is however, a problem with the maximum number we can add, case that is exemplified on the image to the right.</p>
 
       <!-- insert image of the chip adder -->
-      <section id = "explainshot">
+      <div id = "explainshot">
         <table width=100% height=100%>
       <tr>
       <td style = "text-align: center; vertical align: middle;">
@@ -54,11 +54,11 @@
       </td>
       </tr>
       </table>
-      </section>
+      </div>
       <p>As we might have expected, the sum in binary is performed int he same way as in decimal, carrying numebrs to the left. There is also a situation that might happen, and that is, when the result of an operation, in this case a sum, is bigger that the range of the numbers in the input. An example, in decimal, is 5 + 8, which yields 13, bigger (with more positions), than both 5 and 8. In this case, we do what is called truncating:</p>
 
       <!-- insert truncation image -->
-      <section id = "explainshot">
+      <div id = "explainshot">
         <table width=100% height=100%>
       <tr>
       <td style = "text-align: center; vertical align: middle;">
@@ -66,7 +66,7 @@
       </td>
       </tr>
       </table>
-      </section>
+      </div>
       
       <p>We can truncate, which is pretty cool, but now we ask: how can we represent negative numbers? well, se the last part of the truncation image? The hint is: Given a number x, we define -x such that x + (-x) = 0. Have any idea of how can we do this?</p>
       <p>Well, let's try t understand with an example: We have the number 0101 in binary. Now what should we add to it so the result yields all zeros? Well, let's, think of an easier one: what should we add to it so the result yields all ones?</p>
@@ -101,7 +101,7 @@
 
       <p>In the image bellow, the 1011 might mean 11 or -5.Now I have a question: How does the chip knows when we mean 11 or 5. I don't know right now, but I know that <em>there is no need to change the hardware, as we are working in binary, it will yield the same result. It would do both unsigned and signed arithmetic.</em> </p>
 
-      <section id = "explainshot">
+      <div id = "explainshot">
         <table width=100% height=100%>
       <tr>
       <td style = "text-align: center; vertical align: middle;">
@@ -109,10 +109,10 @@
       </td>
       </tr>
       </table>
-      </section>
+      </div>
       <h2>Minimums and Maximums and it's relation to Java</h2>
 
-      <section id = "explainshot">
+      <div id = "explainshot">
         <table width=100% height=100%>
       <tr>
       <td style = "text-align: center; vertical align: middle;">
@@ -120,11 +120,11 @@
       </td>
       </tr>
       </table>
-      </section>
+      </div>
 
       <p>The image above shows the Minimums and maximums table for both US and S.</p>
 
-      <section id = "explainshot">
+      <div id = "explainshot">
         <table width=100% height=100%>
       <tr>
       <td style = "text-align: center; vertical align: middle;">
@@ -132,7 +132,7 @@
       </td>
       </tr>
       </table>
-      </section>
+      </div>
       <p>The key thing to take into account is that in both US and S arithmetic once you get to the biggest number, it returns to the somallest one by truncation and in the case of S, also by Twos complement. <strong>This is the reason for some of the weird things happening in Java with big numbers, in this case, integers</strong>
       <br>
       Oh, so you don't believe me, try this: <br>
@@ -145,7 +145,7 @@
       </p>
       <p>Why are we taling all these things into consideration? Aren't these way too specfic, probably we'll never use it! Well, no! You need to be full stack, know when others don't. Why, because of <strong>bitwise operators!</strong> </p>
 
-      <section id = "explainshot">
+      <div id = "explainshot">
         <table width=100% height=100%>
       <tr>
       <td style = "text-align: center; vertical align: middle;">
@@ -153,10 +153,10 @@
       </td>
       </tr>
       </table>
-      </section>
+      </div>
 
       <p>Finnaly, here are some other operations!</p>
-      <section id = "explainshot">
+      <div id = "explainshot">
         <table width=100% height=100%>
       <tr>
       <td style = "text-align: center; vertical align: middle;">
@@ -164,7 +164,7 @@
       </td>
       </tr>
       </table>
-      </section>
+      </div>
 
       <p>By the way, the answer is 7.</p>
 
