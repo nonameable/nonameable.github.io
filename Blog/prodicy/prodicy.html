@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Prodicy</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <!--// apparently this is not a closing tag. -->
+  </head>
+  <body>
+  <header>
+    <h1 align="center" >Welcome to nonameable.github.io </h1>
+    <nav style = "text-align: center; vertical align: middle;"> <!-- I don't know if its good to give it style like this-->
+    
+    <a href="/index.html">Home</a> 
+    <a href="acomplishments.html">List</a> 
+    <a href="/schoolWork.html"> School Work</a> 
+    <a href="/math.html">Math</a>
+    <a href="/courses.html">Courses</a>
+    <a href="/projects.html">Projects</a>
+  
+    </nav>
+
+  </header>
+    
+    
+    <section class="text">
+      <h2> Prodicy </h2>
+      <p>
+        Since I started this blog is been a pain in the ass writing the entries. Either I listen to the classes or watch the lectures, or I write good, or better blog post. Why I take too long? Maybe because I don't type fast enough. Maybe I don't have a good system of note taking. On the other hand, I can easily describe what I've just learned while talking to someone. Why not talk to the computer? Wy not just find a way to simply speak, and be able to write a blog post, and if I want, add HTML to it so I can make it appropiate for a website?    
+      </p>
+      <p>
+        I started searching and found <a href="http://9to5mac.com/2014/03/29/review-dragon-dictate-4-0-for-mac-the-best-speech-recognition-app-gets-even-better/"> Dictate 4.0</a>, a software whuch apparently is ok; the problem is, it costs 199 dolars and I don't have that money. That reminded me of the <a href="https://support.apple.com/en-us/HT202584">dictation feature in OSX </a>  , but as soon I tried to use it, I realize that the computer was going to send the audio to Apple in order to translate it and then return it back to me. <br>
+
+        Also, I didn't quite liked tha tthe computer could only listen for up to 30 seconds at a time, which is not that cool. I want something that listen continously. I need to build something myself.
+      </p>
+
+      <h3>Inspiration and code</h3>
+      
+      <p>
+        This is the first time I decide to develope something by myself. I know it's going to be hard. I need inspiration, other projects to support my own; here are a few I found that maybe could help me build better software: 
+
+      </p>
+      <ul>
+        <li>
+          <a href="https://www.linux.com/news/embedded-mobile/mobile-linux/711479-palaver-taps-googles-voice-technology-for-linux-speech-recognition">Palaver (forgotten Ubuntu Siri-like recognition software.)</a>
+          <p> Apparently this college studnet James mcClain use Google's voice API and database on the backend to make this program. Here is the repo <a href="https://github.com/JamezQ/Palaver#palaver-speech-recognition">Palaver</a> </p>
+
+        </li> 
+
+        <li>
+          <a href="https://github.com/rcorcs/NatI"> Natl , muti-language voice control system.</a>
+          <p>
+            This was made in a similar way to Palaver, but seems to be just for the computer, not or Internet searches. 
+          </p>
+        </li>
+
+        <li>
+          <a href="https://github.com/dictation-toolbox">Dictation Toolbkox</a>
+          <p>
+            This guy wanted to code by voice: <a href="https://www.youtube.com/watch?v=8SkdfdXWYaI"> using python to Code by Voice</a>
+          </p>
+        </li>
+      </ul>
+      <p>
+        The first thing I need is speech recognizition software. As I must remember every time I start a new project: I must stand upon the shoulders of giants. I started searching and found the following libraries: 
+      </p>
+
+      <ul>
+        <li> <a href="https://pypi.python.org/pypi/pygsr">pygsr</a> </li>
+        <li><a href="https://pypi.python.org/pypi/SpeechRecognition/">SpeechRecognitiion 2.0.1</a></li>
+        <li>
+        <a href="https://developers.google.com/web/updates/2013/01/Voice-Driven-Web-Apps-Introduction-to-the-Web-Speech-API?hl=en"></a>Web speech API from Google
+        <p>
+          iF the API is not opensource, could I make a web app do the trascript and then present the results to the user? Check this out:
+          <a href="http://shapeshed.com/html5-speech-recognition-api/"> HTML5 speech recognition API</a>
+        </p>
+        </li>
+
+        <li> <a href="https://github.com/lkuza2/java-speech-api"></a> J.A.R.V.I.S</li>
+        <p>Apparently, Google shutdown the V1 API. Luckily, there is handy unofficial Java implementation for the new v2 version located in the link above.
+
+        A key is required to get it working. You need to also subscribe to the chromium developers newsletter to be able to see the option for that key. Full instructions are included on the wiki of the project.
+        I think I'm gonna go with the Java library, as I think learning python to the point where I feel confortable using the API. 
+        </p>
+
+      </ul>
+
+
+    </section>
+   
+
+    <footer>
+    <nav style = "text-align: center; vertical align: middle;">
+    
+    <a href="/index.html">Home</a> 
+    <a href="acomplishments.html">List</a> 
+    <a href="/schoolWork.html"> School Work</a> 
+    <a href="/math.html">Math</a>
+    <a href="/courses.html">Courses</a>
+    <a href="/projects.html">Projects</a>
+    </nav>
+      <p align="center" > Made by <b>nonameable</b> </p>
+    </footer>
+
+  </body>
+</html>
