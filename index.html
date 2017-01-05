@@ -26,7 +26,7 @@
                     <img class="profile-pic" src="static/img/nona.jpg">
                     <p>
                         I'm David!  Here is my <a href="static/resume.pdf">resume</a>.
-                        I'm a senior at Universidad de los Andes studying Systems and Computing Engineering.
+                        I'm a junior at Universidad de los Andes studying Systems and Computing Engineering.
                     </p>
                     <p> My most recent projects are:
                         
@@ -34,9 +34,43 @@
                 </div>
                 <div class="tab-pane" id="projects">
                     <h1>Team Projects</h1>
+                    
+                        <h2>Welcol (2016)</h2>
+                            <p>Application for storing information and monitoring emergencies a petroleum wells network.</p>
+                            <p> The main objective for this project was to implement client requirements taking into account 
+                                quality attributes such as usability, performance, reliability, and security. </p>
+                            <p> We made use of load balancers such as Nginx in order to guarantee availability 
+                                and also applied design patters such as Factory Method and Proxy to reach the desired levels of coupling and cohesion in
+                                the source code.</p>
+                            <p> In addtion, we implemented an API that allowed communication with real sensors measuring data using NodeRED.</p>
+                            <p>Technologies used: NodeJS, Express, PostreSQL and Angular.  We developed a client for Android and iOS.</p>
+                    
+                        <h2>PuertoAndes (2016) </h2>
+                            <p>Application for storage, management and analysis of a port network. The application was able to handle many types of transactions
+                                regarding the multiple agents in a port such as: customers, ships, containers, workers, employees, employers, traders, etc.<p></p>
+                            <p> At the end of the project our database had tables with more than 2 million rows. All this data was proccesed and worked
+                                by the implementation of a efficent database schema that used good design and indexes to make faster searches and also
+                                efficient in memory algorithms when necessary</p>
+                            <p> We also exposed all of this functionalities through a RESTFUL API.</p>    
+                            <p> Technologies used: Oracle11g, Java JDBC, SQLDeveloper.</p>
+                    
+                        <h2>Unitrip (2016)</h2>
+                            <p>Web application that allows users to plan your holidays. Users can create schedules, stops and events.</p> 
+                            <p>Our main goal was to learn how to make a simple application that exposed a well designed RESTFUL API.
+                                As our secondary goal was to design a good system that modeled in the best possible way one to one, one to many, many to one
+                                and many to many relationships</p>
+                            <p> We made use of a object relational database and and JPA for persistence</p>
+                            <p>Technologies used: Java EE, AngularJS</p>
+                    
+                        <h2>CCT (2015)</h2>
+                            <p> Application for finding shortest/cheapest/ routes for package delivery in Bogotá, Colombia using shortest path, Dijkstra and other graph algorithms. </p>
+                            <p>The program saved in a file the most efficient route and also was able to draw it upon Google Maps</p>
+                            <p>In order to increase the efficiency of our program we reimplemented the algorithms usind redundancy od data structures to make the operations as efficient as possible. Of course, we traded space for time complexity. This resulted in our program being at least 10x faster than other applications for certain searches.</p>
+                            <p> This application was made using pure Java.</p>
+                                
                         
-                    <h1>Class Projects</h1>
-                        
+                                
+                           
                 </div>
                 <div class="tab-pane" id="contact">
                     <h1>Say Hello!</h1>
@@ -49,7 +83,7 @@
                     </p>
                 </div>
                 <div class="tab-pane" id="blog">
-                    
+                    I will duplicate my blog content here as I will be mainly posting it in Medium. 
                 </div>
 
             </div>
