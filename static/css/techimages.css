@@ -1,0 +1,33 @@
+.category {
+position:relative;
+display: inline-block;
+float:left;
+padding:10px;
+}
+
+.img-big {
+    width: 100px;
+    height: auto;
+}
+.img-med-3 {
+     width: 175px;
+    height: auto;
+}
+.img-med {
+     width: 50px;
+    height: auto;
+}
+.img-med-sml {
+     width: 75px;
+    height: auto;
+}
+
+.img-sml {
+     width: 100px;
+    height: auto;
+}
+
+.img-sml-sml {
+    width: 100px;
+    height: auto;
+}
