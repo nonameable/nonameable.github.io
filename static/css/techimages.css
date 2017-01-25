@@ -1,7 +1,11 @@
+.table td {
+  text-align: center;
+}
+
 .category {
 position:relative;
 display: inline-block;
-float:left;
+float:center;
 padding:10px;
 }
 
@@ -14,20 +18,29 @@ padding:10px;
     height: auto;
 }
 .img-med {
-     width: 50px;
+     width: 40px;
     height: auto;
 }
 .img-med-sml {
-     width: 75px;
+     width: 60px;
     height: auto;
 }
 
-.img-sml {
+
+#oracle{
+    width: 140px;
+    height: auto;
+}
+
+#mongo {
      width: 100px;
     height: auto;
 }
 
-.img-sml-sml {
-    width: 100px;
-    height: auto;
+#golang {
+  width: 40px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
