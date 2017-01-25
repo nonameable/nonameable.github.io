@@ -26,6 +26,9 @@ padding:10px;
     height: auto;
 }
 
+#hello {
+    text-align: center;
+}
 
 #oracle{
     width: 140px;
