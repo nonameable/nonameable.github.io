@@ -5,9 +5,11 @@
     <meta property="og:title" content="David Delgado Ruiz" />
     <meta property="og:description" content="David Delgado's website." />
     <link href="static/css/bootstrap.css" rel="stylesheet">
-    <link href="static/css/melaniecebula.css" rel="stylesheet">
+    <link href="static/css/styles.css" rel="stylesheet">
     <link href="static/css/techimages.css" rel="stylesheet">
+    <link href="static/css/timeline.css" rel="stylesheet">
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+    <script src="static/js/timeline.js"></script>
 </head>
 <body>
     <div class="container">
@@ -18,12 +20,13 @@
             <ul id="tabs" class="nav nav-pills custom" data-tabs="tabs">
                 <li class="active header-tab"><a href="#home" data-toggle="tab">Home</a></li>
                 <li class="header-tab"><a href="#projects" data-toggle="tab">Projects</a></li>
+                <li class="header-tab"><a href="#andes" data-toggle="tab">Andes</a></li>
                 <li class="header-tab"><a href="#contact" data-toggle="tab">Contact</a></li>
                 <li class="header-tab"><a href="#blog" data-toggle="tab">Blog</a></li>
             </ul>
             <div id="my-tab-content" class="tab-content">
                 <div class="tab-pane active" id="home">
-                    <h1 id="hello">Hello!</h1>
+                    <h1 class="center-header">Hello!</h1>
                     
                     <img class="profile-pic" src="static/img/nona.jpg">
                     <p>
@@ -128,8 +131,8 @@
                     
                 </div>
                 <div class="tab-pane" id="projects">
-                    <h1>Projects</h1>
-                    
+                    <h1 class="center-header">Projects</h1>
+                        
                         <h2>Welcol (2016) - Team project</h2>
                             <p>Application for storing information and monitoring emergencies a petroleum wells network.</p>
                             <p> The main objective for this project was to implement client requirements taking into account 
@@ -168,22 +171,41 @@
                            
                 </div>
                 <div class="tab-pane" id="andes">
-                    <h1>Say Hello!</h1>
-                    <p>Here is my <a href="static/DavidDelgadoResume.pdf">resume</a>.</p>
-                    <p><b>Contact:</b>
-                        <br>linkedin: <a href="https://www.linkedin.com/in/davidmdelgador">linkedin.com/in/davidmdelgador</a>
-                        <br>email: <a href="mailto:dm.delgado10@uniandes.edu.co">dm.delgado10@uniandes.edu.co</a>
-                        <br>github: <a href="https://github.com/nonameable">github.com/nonameable</a>
-                        <br>
-                    </p>
+                    <h1 class="center-header">What my life has been in college!</h1>
+                    <br><br>
+                    <!-- You will need to convert css to LESS -->
+                    <div class="timeline">
+                        <div class="timeline-item active">
+                            <div class="year">2008 <span class="marker"><span class="dot"></span></span>
+                            </div>
+                            <div class="info">That song the artist formerly known as prince sang no longer applies.</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="year">2008 <span class="marker"><span class="dot"></span></span>
+                            </div>
+                            <div class="info">The in-house Gawker chat room is filled with photos of Rob Ford, and for one reason: Rob Ford takes a good goddamn photo.</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="year">2008 <span class="marker"><span class="dot"></span></span>
+                            </div>
+                            <div class="info">That song the artist formerly known as prince sang no longer applies.</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="year">2008 <span class="marker"><span class="dot"></span></span>
+                            </div>
+                            <div class="info">The in-house Gawker chat room is filled with photos of Rob Ford, and for one reason.The in-house Gawker chat room is filled with photos of Rob Ford, and for one reason.The in-house Gawker chat room is filled with photos of Rob Ford, and for one reason.</div>
+                        </div>
+                    </div>
+                    
                 </div>
                 
                 <div class="tab-pane" id="contact">
-                    <h1>Say Hello!</h1>
+                     <h1>Say Hello!</h1>
                     <p>Here is my <a href="static/DavidDelgadoResume.pdf">resume</a>.</p>
                     <p><b>Contact:</b>
                         <br>linkedin: <a href="https://www.linkedin.com/in/davidmdelgador">linkedin.com/in/davidmdelgador</a>
                         <br>email: <a href="mailto:dm.delgado10@uniandes.edu.co">dm.delgado10@uniandes.edu.co</a>
+                        <br>protonmail:<a href="mailto:dmdr@protonmail.com">dmdr@protonmail.com</a>
                         <br>github: <a href="https://github.com/nonameable">github.com/nonameable</a>
                         <br>
                     </p>
