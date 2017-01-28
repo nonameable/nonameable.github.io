@@ -29,22 +29,26 @@ div {
     }
     .timeline .timeline-item .info {
         height: 100%;
-        width: 46%;
+        width: 70%;
         margin-left: -2px;
         padding: 0 0 40px 35px;
         border-left: 4px solid #aaa;
         font-size: 14px;
         line-height: 33px;
     }
-    .timeline .timeline-item .image {
+    .timeline .timeline-item .info .text {
+        height: 100%;
+        width: 50%;
+        font-size: 14px;
+    }
+    .timeline .timeline-item .info .image {
         background-color: #fff;
-        
-        height: 40px;
-        width: 20%;
+        padding: 0 0 0 35px;
+        height: 100%;
+        width: 50%;
         display: block;
         float: right;
         position: relative;
-        max-height:100%; max-width:100%;
     }
     .timeline .timeline-item .marker {
         background-color: #fff;
