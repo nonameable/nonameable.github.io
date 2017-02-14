@@ -108,3 +108,12 @@ li {
   margin-left: auto;
   margin-right: auto;
 }
+
+.small-pic {
+  width: 5%;
+  height: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
