@@ -3901,7 +3901,7 @@ input[type="submit"].btn.btn-mini {
 
 .nav > li > a:hover {
   text-decoration: none;
-  background-color: #eeeeee;  
+  background-color: #eeeeee;
 }
 
 .nav > li > a > img {
@@ -4017,7 +4017,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .nav-tabs > li > a:hover {
-  border-color: #eeeeee #eeeeee #dddddd;  
+  border-color: #eeeeee #eeeeee #dddddd;
 }
 
 .nav-tabs > .active > a,
