@@ -1,0 +1,15 @@
+.normal-font {
+    font-weight: normal;
+}
+
+.light-font {
+    font-weight: lighter;
+}
+
+.thick-font {
+    font-weight: bold;
+}
+
+.thicker-font {
+    font-weight: 900;
+}

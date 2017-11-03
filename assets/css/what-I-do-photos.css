@@ -1,0 +1,12 @@
+div.gallery {
+    margin: 5px;
+    float: left;
+    width: 100%;
+}
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+div.desc {
+    padding: 5px;
+}
