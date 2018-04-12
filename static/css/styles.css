@@ -117,6 +117,21 @@ li {
   margin-right: auto;
 
 }
+.medium-pic {
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.medium-small-pic {
+  width: 25%;
+  height: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .video{
   display: block;
@@ -125,4 +140,17 @@ li {
   margin-top: 5%;
   margin-bottom: 5%;
 
+}
+
+.center-video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.horizontal {
+position:relative;
+display: inline-block;
+float:center;
+padding:10px;
 }
